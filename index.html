@@ -90,16 +90,16 @@
             resizeCanvas();
             window.addEventListener('resize', resizeCanvas);
             
-            // Load default face image
-            faceImage.onload = function() {
-                // Create mesh grid when image is loaded
-                createMeshGrid();
-                // Start game loop
-                requestAnimationFrame(gameLoop);
-            };
-            
-            // Use a placeholder image to start with
-            faceImage.src = photo_2025-04-01 13.57.09.jpeg
+           // Load your GitHub-hosted image
+faceImage.onload = function() {
+    // Create mesh grid when image is loaded
+    createMeshGrid();
+    // Start game loop
+    requestAnimationFrame(gameLoop);
+};
+
+// Replace with your actual GitHub raw URL
+faceImage.src = 'https://raw.githubusercontent.com/username/repository/main/yourimage.jpg';
             
             // Set up event listeners
             setupEventListeners();
